@@ -1,0 +1,1 @@
+﻿斯巴达克斯,Dsn=datadb;uid=dbuser;pwd=dbuser

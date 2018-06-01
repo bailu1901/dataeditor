@@ -1,0 +1,22 @@
+1、双击DataEditor.exe
+2、用户名：名字拼音
+     密码：123
+
+
+在使用之前请先配置数据编辑器客户端
+
+1、安装.Net framework 4.0
+
+2、32位系统安装mysql-connector-odbc-5.2.4-win32.msi
+   64位系统安装mysql-connector-odbc-5.2.5-winx64.msi
+
+3、控制面板[->系统和安全]->管理工具->数据源(ODBC)->用户DSN->添加->MySQL ODBC Driver
+
+4、Data Source Name: datadb
+      TCP/IP Server: 192.168.6.102
+               Port: 3306
+               User: ccz
+           Password: test
+           Database: data_ccz
+5、客户端文件：DataEditor.exe test.xml server_list.txt
+

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{3C7C0692-508A-435B-88B4-FDCF1AE1043F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChnCharInfo">
+      <HintPath>.\ChnCharInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApplication1.Properties\Resources.cs" />
+    <Compile Include="WindowsFormsApplication1.Properties\Settings.cs" />
+    <Compile Include="WindowsFormsApplication1\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApplication1\ColumnTypes.cs" />
+    <Compile Include="WindowsFormsApplication1\Converter.cs" />
+    <Compile Include="WindowsFormsApplication1\DataViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApplication1\DColumn.cs" />
+    <Compile Include="WindowsFormsApplication1\DDataTable.cs" />
+    <Compile Include="WindowsFormsApplication1\DDB.cs" />
+    <Compile Include="WindowsFormsApplication1\DRange.cs" />
+    <Compile Include="WindowsFormsApplication1\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApplication1\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApplication1\Messages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApplication1\NewData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApplication1\PrimaryKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApplication1\PrimaryKey_.cs" />
+    <Compile Include="WindowsFormsApplication1\Program.cs" />
+    <Compile Include="WindowsFormsApplication1\SelectTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApplication1\SetView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1.Properties\Resources.resources" />
+    <EmbeddedResource Include="WindowsFormsApplication1\AddUser.resources" />
+    <EmbeddedResource Include="WindowsFormsApplication1\DataViewer.resx">
+      <DependentUpon>DataViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Login.resources" />
+    <EmbeddedResource Include="WindowsFormsApplication1\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Messages.resources" />
+    <EmbeddedResource Include="WindowsFormsApplication1\NewData.resources" />
+    <EmbeddedResource Include="WindowsFormsApplication1\PrimaryKey.resources" />
+    <EmbeddedResource Include="WindowsFormsApplication1\SelectTable.resources" />
+    <EmbeddedResource Include="WindowsFormsApplication1\SetView.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,39 @@
+﻿<DB name="mz" charset="utf8">
+<driver name="com.mysql.jdbc.Driver" dbsys="MySQL" sqlmaker="mutabledb.SqlMakerMySQL"/>
+<table name="Language" alias="语言表" catalog="版本相关" operate="create" invisible="false" virtual="/Config">
+  <column name="c1" alias="语言ID" type="integer" not-null="true" readonly="false" range="0,99999999" default="0" />
+  <column name="c2" alias="语言名称" type="string" not-null="false" readonly="false" length="256" default="" />
+  <primarykey name="id" column="c1"/>
+</table>
+<table name="Platform" alias="平台表" catalog="版本相关" operate="create" invisible="false" virtual="/Config">
+  <column name="c1" alias="平台ID" type="integer" not-null="true" readonly="false" range="0,99999999" default="0" />
+  <column name="c2" alias="平台名称" type="string" not-null="false" readonly="false" length="256" default="" />
+  <primarykey name="id" column="c1"/>
+</table>
+<table name="Channel" alias="渠道表" catalog="版本相关" operate="create" invisible="false" virtual="/Config">
+  <column name="c1" alias="渠道ID" type="integer" not-null="true" readonly="false" range="0,99999999" default="0" />
+  <column name="c2" alias="渠道名称" type="string" not-null="false" readonly="false" length="256" default="" />
+  <primarykey name="id" column="c1"/>
+</table>
+<table name="Version" alias="版本表" catalog="版本相关" operate="create" invisible="false" virtual="/Config">
+  <column name="c1" alias="配置ID" type="integer" not-null="true" readonly="false" range="0,99999999" default="1" />
+  <column name="c2" alias="语言" type="refid" not-null="true" readonly="false" table="Language" default="-1" />
+  <column name="c3" alias="平台" type="refid" not-null="true" readonly="false" table="Platform" default="-1" />
+  <column name="c4" alias="渠道" type="refid" not-null="true" readonly="false" table="Channel" default="-1" />
+  <column name="c5" alias="大版本" type="string" not-null="true" readonly="false" length="256" default="" />
+  <column name="c6" alias="小版本" type="integer" not-null="true" readonly="false" range="0,99999999" default="0" />
+  <column name="c7" alias="资源URL" type="string" not-null="true" readonly="false" length="256" default="" />
+  <column name="c8" alias="公告URL" type="string" not-null="true" readonly="false" length="256" default="" />
+  <column name="c9" alias="是否有新版本" type="enum" not-null="true" readonly="false" value="否,是" default="0" />
+  <column name="c10" alias="新版本URL" type="string" not-null="true" readonly="false" length="256" default="" />
+  <column name="c11" alias="Gate地址" type="string" not-null="true" readonly="false" length="2048" default="" />
+  <column name="c12" alias="是否在审核中" type="integer" not-null="true" readonly="false" range="0,99999999" default="0" />
+  <column name="c13" alias="强制显示公告" type="enum" not-null="true" readonly="false" value="否,是" default="0"/>
+  <column name="c14" alias="版号信息" type="string" not-null="true" readonly="false" length="2048" default="" />
+  <column name="c15" alias="版本描述" type="string" not-null="true" readonly="false" length="2048" default="" />
+  <column name="c16" alias="ipWhiteList" type="string" not-null="true" readonly="false" length="2048" default="" />
+  <column name="c17" alias="Gate地址2" type="string" not-null="true" readonly="false" length="512" default="" />
+  <primarykey name="id" column="c1"/>
+</table>
+
+</DB>
