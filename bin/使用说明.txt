@@ -1,21 +1,21 @@
-1¡¢trunk\Public\Êı¾İ±à¼­Æ÷\DataEditor.exe
-2¡¢Ê¹ÓÃÓÃ»§Ãû¼°ÃÜÂëµÇÂ¼
+ï»¿1ã€trunk\Public\æ•°æ®ç¼–è¾‘å™¨\DataEditor.exe
+2ã€ä½¿ç”¨ç”¨æˆ·ååŠå¯†ç ç™»å½•
 
 
-ÔÚÊ¹ÓÃÖ®Ç°ÇëÏÈÅäÖÃÊı¾İ±à¼­Æ÷¿Í»§¶Ë
+åœ¨ä½¿ç”¨ä¹‹å‰è¯·å…ˆé…ç½®æ•°æ®ç¼–è¾‘å™¨å®¢æˆ·ç«¯
 
-1¡¢°²×°.Net framework 4.5
+1ã€å®‰è£….Net framework 4.5
 
-2¡¢¹²ÏíÅÌ
-   64Î»ÏµÍ³°²×°mysql-connector-odbc-5.3.4-winx64.msi
+2ã€å…±äº«ç›˜
+   64ä½ç³»ç»Ÿå®‰è£…mysql-connector-odbc-5.3.4-winx64.msi
 
-3¡¢¿ØÖÆÃæ°å[->ÏµÍ³ºÍ°²È«]->¹ÜÀí¹¤¾ß->Êı¾İÔ´(ODBC)->ÓÃ»§DSN->Ìí¼Ó->MySQL ODBC 5.3 Unicode Driver
+3ã€æ§åˆ¶é¢æ¿[->ç³»ç»Ÿå’Œå®‰å…¨]->ç®¡ç†å·¥å…·->æ•°æ®æº(ODBC)->ç”¨æˆ·DSN->æ·»åŠ ->MySQL ODBC 5.3 Unicode Driver
 
-4¡¢Data Source Name: datadb
-      TCP/IP Server: 192.168.2.129
+4ã€Data Source Name: datadb
+      TCP/IP Server: 192.168.0.209
                Port: 3306
                User: dbuser
            Password: dbuser
            Database: datadb
-5¡¢¿Í»§¶ËÎÄ¼ş£ºDataEditor.exe test.xml server_list.txt
+5ã€å®¢æˆ·ç«¯æ–‡ä»¶ï¼šDataEditor.exe test.xml server_list.txt
 
