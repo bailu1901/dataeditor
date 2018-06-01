@@ -1,1 +1,1 @@
-﻿版本管理,Dsn=version;uid=dbuser;pwd=dbuser
+﻿TestProject,Dsn=datadb;uid=dbuser;pwd=dbuser
